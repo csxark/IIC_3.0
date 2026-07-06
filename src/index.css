@@ -70,8 +70,8 @@ body {
 .glass-card:hover {
   background: rgba(22, 33, 62, 0.8);
   border: 1px solid rgba(255, 20, 147, 0.4);
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(255, 20, 147, 0.2);
+  transform: translateY(-5px); 
+  box-shadow: 0 15px 40px rgba(255, 20, 147, 0.5);
 }
 
 .gradient-text {
@@ -179,4 +179,11 @@ body {
 .modern-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(255, 20, 147, 0.4);
+}
+
+/* ==================== ADDED FOR HERO BUTTON SHINE INTERACTION ==================== */
+@keyframes shine {
+  100% {
+    transform: translateX(100%);
+  }
 }

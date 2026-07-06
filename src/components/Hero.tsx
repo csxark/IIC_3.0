@@ -10,8 +10,6 @@ const Hero: React.FC = () => {
     setIsVisible(true);
   }, []);
 
-
-
   return (
     <section
       id="hero"
@@ -48,16 +46,27 @@ const Hero: React.FC = () => {
               We're back with bigger impact and bolder innovation. Join the most anticipated hackathon of 2025 where dreams become reality.
             </p>
 
+            {/* ==================== UPGRADED BUTTONS START HERE ==================== */}
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 mb-8">
-              <button className="modern-button neon-button py-4 px-8 rounded-lg text-center font-bold transition-all duration-300 shadow-md"
-              onClick={() => window.open('https://docs.google.com/forms/d/1r6umjVOO-wcnGa-XwrCkjcvPk2f8rcAo1msmgnfnCz0/edit', '_blank')} >
-                Submit
+              {/* Left Button - Submit (With Ultra Premium Glow & Reflect Shimmer) */}
+              <button 
+                className="relative group py-4 px-10 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold text-lg rounded-xl transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(236,72,153,0.3)] hover:shadow-[0_0_40px_rgba(236,72,153,0.6)] overflow-hidden cursor-pointer"
+                onClick={() => window.open('https://docs.google.com/forms/d/1r6umjVOO-wcnGa-XwrCkjcvPk2f8rcAo1msmgnfnCz0/edit', '_blank')}
+              >
+                {/* Micro-interaction White Reflection Spark Flash */}
+                <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shine_1s_ease-in-out]" />
+                <span className="relative z-10">Submit</span>
               </button>
-              <button className="glass-card hover:glass-card text-white font-medium py-4 px-8 rounded-lg transition-all duration-300 text-center border border-cyan-400/30 shadow-sm"
-              onClick={() => window.open(Pdf, '_blank')}>
+
+              {/* Right Button - View Problems (With Glass Blur & Subtle Pink Neon Accent Outline) */}
+              <button 
+                className="py-4 px-10 bg-white/[0.03] backdrop-blur-md text-white font-bold text-lg rounded-xl border border-white/10 transition-all duration-300 hover:bg-white/[0.08] hover:border-pink-500/40 hover:text-pink-400 hover:shadow-[0_0_30px_rgba(236,72,153,0.2)] active:scale-95 cursor-pointer text-center"
+                onClick={() => window.open(Pdf, '_blank')}
+              >
                 View Problems
               </button>
             </div>
+            {/* ==================== UPGRADED BUTTONS END HERE ==================== */}
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-8 text-gray-300">
               <div className="flex items-center">
