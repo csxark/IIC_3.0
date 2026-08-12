@@ -37,8 +37,8 @@ const FAQ: React.FC = () => {
 
   const faqItems: FAQItem[] = [
     {
-      question: "Who can participate in IIC 2.0?",
-      answer: "IIC 2.0 is open to all students across colleges and disciplines. Whether you’re a first-timer or a seasoned hacker, if you’ve got the passion to innovate — you’re in!"
+      question: "Who can participate in IIC 3.0?",
+      answer: "IIC 3.0 is open to all students across colleges and disciplines. Whether you’re a first-timer or a seasoned hacker, if you’ve got the passion to innovate — you’re in!"
     },
     {
       question: "Do I need to have a team to register?",
@@ -91,7 +91,7 @@ const FAQ: React.FC = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-cyan-400 mx-auto mb-6"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto animate-on-scroll opacity-0">
-            Find answers to common questions about IIC 2.0. If you don't see your question here, feel free to contact us.
+            Find answers to common questions about IIC 3.0. If you don't see your question here, feel free to contact us.
           </p>
         </div>
 
@@ -136,7 +136,7 @@ const FAQ: React.FC = () => {
             if (isMobile) {
             window.location.href = 'tel:+919728014818';
             } else {
-            window.location.href = 'mailto:Tanishkmittal38@gmail.com?subject=Inquiry about IIC 2.0';
+            window.location.href = 'mailto:Tanishkmittal38@gmail.com?subject=Inquiry about IIC 3.0';
             }
           }}
           >

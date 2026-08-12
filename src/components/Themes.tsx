@@ -47,7 +47,7 @@ const Themes: React.FC = () => {
             <Lightbulb className="h-8 w-8 text-yellow-400" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 animate-on-scroll opacity-0">
-            Themes <span className="gradient-text">IIC 2.0</span>
+            Themes <span className="gradient-text">IIC 3.0</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-cyan-400 mx-auto mb-6"></div>
           <p className="text-xl text-gray-300 max-w-4xl mx-auto animate-on-scroll opacity-0 leading-relaxed">

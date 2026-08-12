@@ -120,7 +120,7 @@ const Footer: React.FC = () => {
         {/*<div className="border-t border-pink-400/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              &copy; 2025 IIC 2.0. All rights reserved. Built with ❤️ for innovation.
+              &copy; 2025 IIC 3.0. All rights reserved. Built with ❤️ for innovation.
             </p>
             <div className="flex space-x-6">
               <a href="#" className="text-gray-400 hover:text-pink-400 text-sm transition-colors duration-300">Privacy Policy</a>

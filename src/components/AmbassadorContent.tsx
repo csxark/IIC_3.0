@@ -58,7 +58,7 @@ const AmbassadorContent: React.FC = () => {
   ];
 
   const responsibilities = [
-    "Promote IIC 2.0 on your campus and social media",
+    "Promote IIC 3.0 on your campus and social media",
     "Organize tech talks and awareness sessions",
     "Help students with registration and queries",
     "Share event updates and announcements",

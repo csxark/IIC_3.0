@@ -42,7 +42,7 @@ const Registration: React.FC = () => {
             <Rocket className="h-8 w-8 text-pink-400" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 animate-on-scroll opacity-0">
-            Register for <span className="gradient-text">IIC 2.0</span>
+            Register for <span className="gradient-text">IIC 3.0</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-cyan-400 mx-auto mb-6"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto animate-on-scroll opacity-0">
@@ -55,7 +55,7 @@ const Registration: React.FC = () => {
             <div className="glass-card rounded-2xl p-8 md:p-12">
               <div className="flex items-center justify-center mb-8">
                 <Sparkles className="h-8 w-8 text-pink-400 mr-3" />
-                <h3 className="text-3xl font-bold gradient-text">Why Join IIC 2.0?</h3>
+                <h3 className="text-3xl font-bold gradient-text">Why Join IIC 3.0?</h3>
               </div>
               
               <div className="grid md:grid-cols-2 gap-6 mb-10">
