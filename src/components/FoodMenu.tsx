@@ -10,8 +10,6 @@ const menuItems = [
   { id: 101, name: 'Aloo Tikki Burger', price: 75, category: 'Burgers', desc: 'Classic spiced potato patty burger' },
   { id: 102, name: 'Crispy Masala Burger', price: 80, category: 'Burgers', desc: 'Crunchy masala patty with fresh veggies' },
   { id: 103, name: 'Tandoori Paneer Burger', price: 130, category: 'Burgers', desc: 'Grilled paneer marinated in tandoori spices' },
-  { id: 201, name: 'Aloo Tikki Wrap', price: 110, category: 'Wraps', desc: 'Spiced potato filling wrapped in a soft tortilla' },
-  { id: 202, name: 'Spicy Paneer Wrap', price: 140, category: 'Wraps', desc: 'Fiery paneer chunks with tangy sauce wrap' },
   { id: 301, name: 'Salted Fries', price: 80, category: 'Sides', desc: 'Classic crispy salted french fries' },
   { id: 302, name: 'Peri Peri Fries', price: 100, category: 'Sides', desc: 'Spicy and tangy peri-peri coated fries' },
   { id: 401, name: 'Regular Cold Coffee', price: 80, category: 'Beverages', desc: 'Classic refreshing cold coffee' },
