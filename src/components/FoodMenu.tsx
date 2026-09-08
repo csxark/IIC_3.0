@@ -31,7 +31,7 @@ const isPaymentWindowOpen = (date = new Date()) => {
   const isEventDay = isEventMonth && (day === 8 || day === 9);
   const minutesSinceMidnight = date.getHours() * 60 + date.getMinutes();
   const isLateWindow = isEventDay && (minutesSinceMidnight >= 23 * 60 || minutesSinceMidnight < 60);
-  const isEarlyWindow = isEventDay && minutesSinceMidnight >= 2 * 60 + 30 && minutesSinceMidnight < 4 * 60;
+  const isEarlyWindow = isEventDay && minutesSinceMidnight >= 2 * 60 + 30 && minutesSinceMidnight < 3 * 60 + 30;
   return isLateWindow || isEarlyWindow;
 };
 
@@ -140,7 +140,7 @@ const FoodMenu = () => {
       const isSept9 = isEventMonth && day === 9;
       const minutesSinceMidnight = h * 60 + minutes;
       const isWindow1 = minutesSinceMidnight >= 23 * 60 || minutesSinceMidnight < 60;
-      const isWindow2 = minutesSinceMidnight >= 2 * 60 + 30 && minutesSinceMidnight < 4 * 60;
+      const isWindow2 = minutesSinceMidnight >= 2 * 60 + 30 && minutesSinceMidnight < 3 * 60 + 30;
       
       if ((isSept8 || isSept9) && (isWindow1 || isWindow2)) {
         setIsOpen(true);
@@ -477,7 +477,7 @@ const FoodMenu = () => {
               Food delivery is only available during specific hackathon windows:
               <br/><br/>
               <span className="text-cyan-400 font-bold block mb-2">11:00 PM - 1:00 AM</span>
-              <span className="text-cyan-400 font-bold block">2:30 AM - 4:00 AM</span>
+              <span className="text-cyan-400 font-bold block">2:30 AM - 3:30 AM</span>
               <br/>
               Check back during these times to order!
             </p>
@@ -649,7 +649,7 @@ const FoodMenu = () => {
                     <div className="flex flex-col items-center justify-center h-full p-10 text-center">
                       <Clock className="w-12 h-12 text-gray-500 mb-5" />
                       <h2 className="text-2xl font-bold text-white mb-3">Ordering is closed</h2>
-                      <p className="text-gray-400 max-w-sm">The payment QR is available only during 11:00 PM - 1:00 AM and 2:30 AM - 4:00 AM on the event days.</p>
+                      <p className="text-gray-400 max-w-sm">The payment QR is available only during 11:00 PM - 1:00 AM and 2:30 AM - 3:30 AM on the event days.</p>
                     </div>
                   ) : <div className="flex flex-col h-full overflow-y-auto custom-scrollbar overscroll-contain" data-lenis-prevent="true">
                     <div className="p-5 sm:p-8 pb-4 sm:pb-6 bg-gradient-to-b from-cyan-950/20 to-transparent shrink-0">
