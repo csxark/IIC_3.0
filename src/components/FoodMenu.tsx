@@ -22,6 +22,7 @@ const MAX_SCREENSHOT_DIMENSION = 1400;
 const PAYMENT_UPI_ID = 'harshraj8295@okhdfcbank';
 const PAYMENT_PHONE = '8903244085';
 const PAYMENT_NAME = 'HARSH RAJ';
+const FOOD_ORDERS_OPEN = false;
 
 const isPaymentWindowOpen = (date = new Date()) => {
   const isEventMonth = date.getFullYear() === 2026 && date.getMonth() === 8;
@@ -87,7 +88,7 @@ const FoodMenu = () => {
 
   const [isOpen, setIsOpen] = useState(false);
   const [isPreview, setIsPreview] = useState(false);
-  const [canAcceptPayment, setCanAcceptPayment] = useState(() => isPaymentWindowOpen());
+  const [canAcceptPayment, setCanAcceptPayment] = useState(false);
   const [isPaymentOpen, setIsPaymentOpen] = useState(false);
   const [teamName, setTeamName] = useState('');
   const [teamLeaderName, setTeamLeaderName] = useState('');
@@ -117,6 +118,13 @@ const FoodMenu = () => {
 
   useEffect(() => {
     const checkTime = () => {
+      if (!FOOD_ORDERS_OPEN) {
+        setIsOpen(false);
+        setIsPreview(false);
+        setCanAcceptPayment(false);
+        return;
+      }
+
       const now = new Date();
       const eventStart = new Date(2026, 8, 8, 11, 30); // Sept 8, 11:30 AM
       
@@ -470,9 +478,10 @@ const FoodMenu = () => {
             <div className="w-20 h-20 bg-gray-900/50 rounded-full flex items-center justify-center mb-6 border border-white/5">
               <Clock className="w-10 h-10 text-gray-500" />
             </div>
-            <h2 className="text-3xl font-bold text-white mb-4">Kitchen is Closed</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Food Orders are Closed</h2>
             <p className="text-gray-400 max-w-md mx-auto leading-relaxed">
-              Food delivery is only available during specific hackathon windows:
+              Food orders are currently closed. Please check back later.
+              <span className="block mt-4">When available, delivery runs during:</span>
               <br/><br/>
               <span className="text-cyan-400 font-bold block mb-2">11:00 PM - 1:00 AM</span>
               <span className="text-cyan-400 font-bold block">2:30 AM - 3:30 AM</span>
