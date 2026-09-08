@@ -16,14 +16,14 @@ const menuItems = [
   { id: 302, name: 'Peri Peri Fries', price: 100, category: 'Sides', desc: 'Spicy and tangy peri-peri coated fries' },
   { id: 401, name: 'Regular Cold Coffee', price: 80, category: 'Beverages', desc: 'Classic refreshing cold coffee' },
   { id: 402, name: 'Medium Cold Coffee', price: 90, category: 'Beverages', desc: 'Larger serving of our classic cold coffee' },
-  { id: 403, name: 'Brownie Shake', price: 120, category: 'Beverages', desc: 'Rich chocolate shake blended with gooey brownie' }
+  { id: 403, name: 'Oreo Shake', price: 100, category: 'Beverages', desc: 'Creamy chocolate shake blended with Oreo cookies' }
 ];
 const MAX_ITEM_QUANTITY = 40;
 const MAX_SCREENSHOT_BYTES = 5 * 1024 * 1024;
 const MAX_SCREENSHOT_DIMENSION = 1400;
-const PAYMENT_UPI_ID = 'sarathmohanraj28@okaxis';
+const PAYMENT_UPI_ID = 'harshraj8295@okhdfcbank';
 const PAYMENT_PHONE = '8903244085';
-const PAYMENT_NAME = 'SARATH';
+const PAYMENT_NAME = 'HARSH RAJ';
 
 const isPaymentWindowOpen = (date = new Date()) => {
   const isEventMonth = date.getFullYear() === 2026 && date.getMonth() === 8;
@@ -240,7 +240,11 @@ const FoodMenu = () => {
     setIsUploading(true);
     
     const orderId = crypto.randomUUID();
-    const orderItems = cartItems.map(item => ({ id: item.id, quantity: item.quantity }));
+    const orderItems = cartItems.map(item => ({
+      id: item.id,
+      name: item.name,
+      quantity: item.quantity
+    }));
     const paymentScreenshotPath = `payments/${orderId}.webp`;
     let uploadSucceeded = false;
 
